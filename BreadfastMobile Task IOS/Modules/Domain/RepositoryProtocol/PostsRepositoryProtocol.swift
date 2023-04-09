@@ -8,4 +8,5 @@
 import Foundation
 protocol PostsRepositoryProtocol {
     func getPosts() async throws  -> PostsResponse
+    func getPostComments(postId: Int) async throws -> PostsCommentsResponse
 }

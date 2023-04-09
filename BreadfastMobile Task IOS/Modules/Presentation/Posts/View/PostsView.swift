@@ -23,7 +23,7 @@ struct PostsView: View {
                             .padding(.bottom, 20)
                         List(viewModel.viewState.posts) { post in
                             NavigationLink {                                
-                                viewModel.gotoPostDetails(postId: post.id)
+                                viewModel.gotoPostDetails(post: post)
                                 
                             } label: {
                                 PostView(post: post)

@@ -15,7 +15,7 @@ struct PostsViewCoordinator {
         return view
     }
     
-    func goToPostDetails(postId: Int) -> PostDetailsView {
-        PostsDetailsCoordinator(postId: postId).build()
+    func goToPostDetails(post: PostResponseData) -> PostDetailsView {
+        PostDetailsCoordinator(post: post).build()
     }
 }

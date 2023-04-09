@@ -9,8 +9,10 @@ import Foundation
 
 struct PostsRepository: PostsRepositoryProtocol, ServiceHandler {
     func getPosts() async throws  -> PostsResponse {
-        let response = try await request(endPoint: PostsEndPoint(), model: PostsResponse.self)
-        print(response)
-        return response
+        try await request(endPoint: PostsEndPoint(), model: PostsResponse.self)
+    }
+    
+    func getPostComments(postId: Int) async throws -> PostsCommentsResponse {
+        try await request(endPoint: PostCommentsEndPoint(postId: postId), model: PostsCommentsResponse.self)
     }
 }

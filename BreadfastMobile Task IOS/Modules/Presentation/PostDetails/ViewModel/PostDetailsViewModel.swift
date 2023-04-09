@@ -1,20 +1,25 @@
 //
-//  PostsViewModel.swift
+//  PostDetailsViewModel.swift
 //  BreadfastMobile Task IOS
 //
 //  Created by mohamed albohy on 09/04/2023.
 //
 
 import Foundation
-final class PostsViewModel: ObservableObject {
-    private let useCase: PostsUseCase
-    private let coordinator: PostsViewCoordinator
+
+final class PostDetailsViewModel: ObservableObject {
+    private let useCase: PostCommentsUseCase
+    private let coordinator: PostDetailsCoordinator
+    private let post: PostResponseData
     @Published private(set) var viewState: ViewState = .init()
 
-    init(useCase: PostsUseCase,
-         coordinator: PostsViewCoordinator) {
+    init(useCase: PostCommentsUseCase,
+         post: PostResponseData,
+         coordinator: PostDetailsCoordinator) {
         self.useCase = useCase
         self.coordinator = coordinator
+        self.post = post
+        viewState.post = post
     }
 
     @MainActor
@@ -27,18 +32,18 @@ final class PostsViewModel: ObservableObject {
 }
 
 // MARK: - Private functions
-extension PostsViewModel {
+extension PostDetailsViewModel {
     @MainActor
     func didLoadView() {
-        getPosts()
+        getComments()
     }
     
     @MainActor
-    func getPosts() {
+    func getComments() {
         viewState.isLoading = true
         Task {
             do {
-                viewState.posts = try await useCase.execute()
+                viewState.postComments = try await useCase.execute(postId: post.id)
             } catch {
                 viewState.errorMessage = error.localizedDescription
                 viewState.isLoading = false
@@ -47,15 +52,16 @@ extension PostsViewModel {
         }
     }
     
-    func gotoPostDetails(post: PostResponseData) -> PostDetailsView {
-        return coordinator.goToPostDetails(post: post)
-    }
+//    func gotoPostDetails(postId: Int) -> PostDetailsView {
+//        return coordinator.goToPostDetails(postId: post)
+//    }
 }
 
-extension PostsViewModel {
+extension PostDetailsViewModel {
     struct ViewState {
         var errorMessage: String = ""
-        var posts: PostsResponse = []
+        var postComments: PostsCommentsResponse = []
+        var post: PostResponseData?
         var shouldShowError: Bool = false
         var isLoading: Bool = false
     }

@@ -10,8 +10,10 @@ import Foundation
 struct PostResponseData:Identifiable, Codable {
     let id: Int
     let userId: Int?
-    let title: String?
-    let body: String?
+    let userAvatar: String?
+    let userName: String?
+    let title: String
+    let body: String
 }
 
 typealias PostsResponse = [PostResponseData]

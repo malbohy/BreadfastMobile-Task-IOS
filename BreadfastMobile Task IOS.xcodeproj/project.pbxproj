@@ -28,6 +28,9 @@
 		2636E51929E3487500EA39F4 /* PostsViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E51829E3487500EA39F4 /* PostsViewCoordinator.swift */; };
 		2636E51E29E358E200EA39F4 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E51D29E358E200EA39F4 /* SplashView.swift */; };
 		2636E52029E35B3200EA39F4 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E51F29E35B3200EA39F4 /* Assets.swift */; };
+		2636E52229E35C0800EA39F4 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E52129E35C0800EA39F4 /* PostView.swift */; };
+		2636E52829E35DA700EA39F4 /* PostDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E52729E35DA700EA39F4 /* PostDetailsView.swift */; };
+		2636E52A29E35DC500EA39F4 /* PostsDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E52929E35DC500EA39F4 /* PostsDetailsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		2636E51829E3487500EA39F4 /* PostsViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewCoordinator.swift; sourceTree = "<group>"; };
 		2636E51D29E358E200EA39F4 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		2636E51F29E35B3200EA39F4 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		2636E52129E35C0800EA39F4 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		2636E52729E35DA700EA39F4 /* PostDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsView.swift; sourceTree = "<group>"; };
+		2636E52929E35DC500EA39F4 /* PostsDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +208,7 @@
 		2636E4F029E3261200EA39F4 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				2636E52329E35D8600EA39F4 /* PostDetails */,
 				2636E51A29E358D000EA39F4 /* Splash */,
 				2636E51029E345FB00EA39F4 /* Posts */,
 			);
@@ -317,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				2636E51329E3461F00EA39F4 /* PostsView.swift */,
+				2636E52129E35C0800EA39F4 /* PostView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -359,6 +367,39 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2636E52329E35D8600EA39F4 /* PostDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2636E52629E35D9500EA39F4 /* Coordinator */,
+				2636E52529E35D9100EA39F4 /* ViewModel */,
+				2636E52429E35D8F00EA39F4 /* View */,
+			);
+			path = PostDetails;
+			sourceTree = "<group>";
+		};
+		2636E52429E35D8F00EA39F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2636E52729E35DA700EA39F4 /* PostDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2636E52529E35D9100EA39F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2636E52629E35D9500EA39F4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2636E52929E35DC500EA39F4 /* PostsDetailsCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,6 +541,9 @@
 				2636E50629E341EE00EA39F4 /* EncodableExtenstion.swift in Sources */,
 				2636E50329E33F0600EA39F4 /* PostsRepository.swift in Sources */,
 				2636E4FD29E33EB200EA39F4 /* HTTPMethodType.swift in Sources */,
+				2636E52829E35DA700EA39F4 /* PostDetailsView.swift in Sources */,
+				2636E52229E35C0800EA39F4 /* PostView.swift in Sources */,
+				2636E52A29E35DC500EA39F4 /* PostsDetailsCoordinator.swift in Sources */,
 				2636E4C229E3237C00EA39F4 /* BreadfastMobile_Task_IOSApp.swift in Sources */,
 				2636E52029E35B3200EA39F4 /* Assets.swift in Sources */,
 				2636E50829E3446C00EA39F4 /* PostsResponse.swift in Sources */,

@@ -8,22 +8,26 @@
 import Foundation
 final class PostsViewModel: ObservableObject {
     private let useCase: PostsUseCase
+    private let coordinator: PostsViewCoordinator
     @Published private(set) var viewState: ViewState = .init()
 
-    init(useCase: PostsUseCase) {
+    init(useCase: PostsUseCase,
+         coordinator: PostsViewCoordinator) {
         self.useCase = useCase
+        self.coordinator = coordinator
     }
 
     @MainActor
     func send(action: PostsViewModel.Actions) {
         switch action {
-            case .viewLoaded: didLoadView()
+        case .viewLoaded: didLoadView()
+            
         }
     }
 }
 
 // MARK: - Private functions
-private extension PostsViewModel {
+extension PostsViewModel {
     @MainActor
     func didLoadView() {
         getPosts()
@@ -43,8 +47,8 @@ private extension PostsViewModel {
         }
     }
     
-    func gotoPostDetails(_ opened: Bool) {
-        
+    func gotoPostDetails(postId: Int) -> PostDetailsView {
+        return coordinator.goToPostDetails(postId: postId)
     }
 }
 

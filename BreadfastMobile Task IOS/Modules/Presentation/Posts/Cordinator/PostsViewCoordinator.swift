@@ -10,8 +10,12 @@ struct PostsViewCoordinator {
     func build() -> PostsView {
         let postsRepository = PostsRepository()
         let useCase = PostsUseCase(postsRepository: postsRepository)
-        let viewModel = PostsViewModel(useCase: useCase)
+        let viewModel = PostsViewModel(useCase: useCase, coordinator: PostsViewCoordinator())
         let view = PostsView(viewModel: viewModel)
         return view
+    }
+    
+    func goToPostDetails(postId: Int) -> PostDetailsView {
+        PostsDetailsCoordinator(postId: postId).build()
     }
 }

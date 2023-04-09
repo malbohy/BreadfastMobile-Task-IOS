@@ -39,6 +39,7 @@
 		2636E53629E3718700EA39F4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E53529E3718700EA39F4 /* Constant.swift */; };
 		2636E53829E3738900EA39F4 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E53729E3738900EA39F4 /* PostEntity.swift */; };
 		2636E53A29E3759600EA39F4 /* PostCommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E53929E3759600EA39F4 /* PostCommentEntity.swift */; };
+		26B7F55629E3794B007B7073 /* postDetailsCoordinatorTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F55529E3794B007B7073 /* postDetailsCoordinatorTestCases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		2636E53529E3718700EA39F4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		2636E53729E3738900EA39F4 /* PostEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
 		2636E53929E3759600EA39F4 /* PostCommentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentEntity.swift; sourceTree = "<group>"; };
+		26B7F55429E378AA007B7073 /* BreadfastMobile Task IOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "BreadfastMobile Task IOS.xctestplan"; sourceTree = "<group>"; };
+		26B7F55529E3794B007B7073 /* postDetailsCoordinatorTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postDetailsCoordinatorTestCases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,7 @@
 		2636E4B529E3237C00EA39F4 = {
 			isa = PBXGroup;
 			children = (
+				26B7F55429E378AA007B7073 /* BreadfastMobile Task IOS.xctestplan */,
 				2636E4C029E3237C00EA39F4 /* BreadfastMobile Task IOS */,
 				2636E4D129E3237D00EA39F4 /* BreadfastMobile Task IOSTests */,
 				2636E4DB29E3237D00EA39F4 /* BreadfastMobile Task IOSUITests */,
@@ -165,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				2636E4D229E3237D00EA39F4 /* BreadfastMobile_Task_IOSTests.swift */,
+				26B7F55529E3794B007B7073 /* postDetailsCoordinatorTestCases.swift */,
 			);
 			path = "BreadfastMobile Task IOSTests";
 			sourceTree = "<group>";
@@ -575,6 +580,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2636E4D329E3237D00EA39F4 /* BreadfastMobile_Task_IOSTests.swift in Sources */,
+				26B7F55629E3794B007B7073 /* postDetailsCoordinatorTestCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

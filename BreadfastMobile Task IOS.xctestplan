@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "0489F0C3-DC14-4C60-A231-9A3EC4E0933F",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:BreadfastMobile Task IOS.xcodeproj",
+      "identifier" : "2636E4BD29E3237C00EA39F4",
+      "name" : "BreadfastMobile Task IOS"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:BreadfastMobile Task IOS.xcodeproj",
+        "identifier" : "2636E4CD29E3237D00EA39F4",
+        "name" : "BreadfastMobile Task IOSTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:BreadfastMobile Task IOS.xcodeproj",
+        "identifier" : "2636E4D729E3237D00EA39F4",
+        "name" : "BreadfastMobile Task IOSUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

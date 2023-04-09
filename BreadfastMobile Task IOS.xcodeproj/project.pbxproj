@@ -94,6 +94,11 @@
 		2636E4C029E3237C00EA39F4 /* BreadfastMobile Task IOS */ = {
 			isa = PBXGroup;
 			children = (
+				2636E4EB29E325D500EA39F4 /* AppDelegate */,
+				2636E4EF29E325F100EA39F4 /* Modules */,
+				2636E4EE29E325EB00EA39F4 /* Utilites */,
+				2636E4ED29E325E600EA39F4 /* Resources */,
+				2636E4EC29E325DE00EA39F4 /* SupportingFiles */,
 				2636E4C129E3237C00EA39F4 /* BreadfastMobile_Task_IOSApp.swift */,
 				2636E4C329E3237C00EA39F4 /* ContentView.swift */,
 				2636E4C529E3237D00EA39F4 /* Assets.xcassets */,
@@ -125,6 +130,121 @@
 				2636E4DE29E3237D00EA39F4 /* BreadfastMobile_Task_IOSUITestsLaunchTests.swift */,
 			);
 			path = "BreadfastMobile Task IOSUITests";
+			sourceTree = "<group>";
+		};
+		2636E4EB29E325D500EA39F4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2636E4EC29E325DE00EA39F4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2636E4ED29E325E600EA39F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2636E4EE29E325EB00EA39F4 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		2636E4EF29E325F100EA39F4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2636E4F229E3261B00EA39F4 /* Data */,
+				2636E4F129E3261800EA39F4 /* Domain */,
+				2636E4F029E3261200EA39F4 /* Presentation */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2636E4F029E3261200EA39F4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2636E4F129E3261800EA39F4 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2636E4F829E3265100EA39F4 /* RepositoryProtocol */,
+				2636E4F729E3264B00EA39F4 /* Entity */,
+				2636E4F629E3264500EA39F4 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2636E4F229E3261B00EA39F4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2636E4F529E3263900EA39F4 /* DataAccess */,
+				2636E4F429E3263500EA39F4 /* Entity */,
+				2636E4F329E3262D00EA39F4 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2636E4F329E3262D00EA39F4 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2636E4F429E3263500EA39F4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2636E4F529E3263900EA39F4 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				2636E4F929E334D100EA39F4 /* ServiceHanlder */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		2636E4F629E3264500EA39F4 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		2636E4F729E3264B00EA39F4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2636E4F829E3265100EA39F4 /* RepositoryProtocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RepositoryProtocol;
+			sourceTree = "<group>";
+		};
+		2636E4F929E334D100EA39F4 /* ServiceHanlder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServiceHanlder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

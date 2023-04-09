@@ -18,13 +18,13 @@ struct CommentCard: View {
             if !avatar.isEmpty,
                 let url = URL(string: avatar) {
                 AsyncImage(url: url)
-                    .frame(width: 50, height: 50)
+                    .frame(width: 25, height: 25)
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.gray, lineWidth: 1))
             } else {
                 Image(systemName: "person.circle")
                     .resizable()
-                    .frame(width: 50, height: 50)
+                    .frame(width: 25, height: 25)
                     .clipShape(Circle())
             }
             

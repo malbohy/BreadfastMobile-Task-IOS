@@ -14,7 +14,6 @@ struct PostCommentsResponseData: Identifiable, Codable {
     let email: String
     let body: String
     let avatar: String?
-    
 }
 
 typealias PostsCommentsResponse = [PostCommentsResponseData]

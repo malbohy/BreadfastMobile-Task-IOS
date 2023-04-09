@@ -7,7 +7,7 @@
 
 import Foundation
 struct PostsEndPoint: Endpoint {
-    var baseUrl: String = "https://gorest.co.in/public/v2/"
+    var baseUrl: String = Constant.baseURL
     var path: String = "posts"
     var headers: [String : String]? = [:]
     var body: Encodable? = nil

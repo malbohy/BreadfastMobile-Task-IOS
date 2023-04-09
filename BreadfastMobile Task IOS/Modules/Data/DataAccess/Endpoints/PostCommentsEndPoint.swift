@@ -8,9 +8,9 @@
 import Foundation
 struct PostCommentsEndPoint: Endpoint {
     let postId: Int
-    var baseUrl: String = "https://gorest.co.in/public/v2/posts/"
+    var baseUrl: String = Constant.baseURL
     var path: String {
-        return  "\(postId)/comments"
+        return  "posts/\(postId)/comments"
     }
     var headers: [String : String]? = [:]
     var body: Encodable? = nil

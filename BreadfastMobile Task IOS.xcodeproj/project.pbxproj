@@ -15,7 +15,7 @@
 		2636E4DF29E3237D00EA39F4 /* BreadfastMobile_Task_IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E4DE29E3237D00EA39F4 /* BreadfastMobile_Task_IOSUITestsLaunchTests.swift */; };
 		2636E4FB29E3350700EA39F4 /* ServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E4FA29E3350700EA39F4 /* ServiceHandler.swift */; };
 		2636E4FD29E33EB200EA39F4 /* HTTPMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E4FC29E33EB200EA39F4 /* HTTPMethodType.swift */; };
-		2636E4FF29E33EC400EA39F4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E4FE29E33EC400EA39F4 /* Endpoint.swift */; };
+		2636E4FF29E33EC400EA39F4 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E4FE29E33EC400EA39F4 /* EndpointProtocol.swift */; };
 		2636E50129E33EE100EA39F4 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E50029E33EE100EA39F4 /* ApplicationError.swift */; };
 		2636E50329E33F0600EA39F4 /* PostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E50229E33F0600EA39F4 /* PostsRepository.swift */; };
 		2636E50629E341EE00EA39F4 /* EncodableExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E50529E341EE00EA39F4 /* EncodableExtenstion.swift */; };
@@ -36,6 +36,7 @@
 		2636E53029E360EA00EA39F4 /* PostCommentsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E52F29E360EA00EA39F4 /* PostCommentsEndPoint.swift */; };
 		2636E53229E36C0C00EA39F4 /* PostCommentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E53129E36C0C00EA39F4 /* PostCommentsUseCase.swift */; };
 		2636E53429E3701C00EA39F4 /* CommentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E53329E3701C00EA39F4 /* CommentCard.swift */; };
+		2636E53629E3718700EA39F4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E53529E3718700EA39F4 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +68,7 @@
 		2636E4DE29E3237D00EA39F4 /* BreadfastMobile_Task_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadfastMobile_Task_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2636E4FA29E3350700EA39F4 /* ServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHandler.swift; sourceTree = "<group>"; };
 		2636E4FC29E33EB200EA39F4 /* HTTPMethodType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethodType.swift; sourceTree = "<group>"; };
-		2636E4FE29E33EC400EA39F4 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		2636E4FE29E33EC400EA39F4 /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
 		2636E50029E33EE100EA39F4 /* ApplicationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
 		2636E50229E33F0600EA39F4 /* PostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRepository.swift; sourceTree = "<group>"; };
 		2636E50529E341EE00EA39F4 /* EncodableExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtenstion.swift; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 		2636E52F29E360EA00EA39F4 /* PostCommentsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentsEndPoint.swift; sourceTree = "<group>"; };
 		2636E53129E36C0C00EA39F4 /* PostCommentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentsUseCase.swift; sourceTree = "<group>"; };
 		2636E53329E3701C00EA39F4 /* CommentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCard.swift; sourceTree = "<group>"; };
+		2636E53529E3718700EA39F4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,11 +140,9 @@
 		2636E4C029E3237C00EA39F4 /* BreadfastMobile Task IOS */ = {
 			isa = PBXGroup;
 			children = (
-				2636E4EB29E325D500EA39F4 /* AppDelegate */,
 				2636E4EF29E325F100EA39F4 /* Modules */,
 				2636E4EE29E325EB00EA39F4 /* Utilites */,
 				2636E4ED29E325E600EA39F4 /* Resources */,
-				2636E4EC29E325DE00EA39F4 /* SupportingFiles */,
 				2636E4C129E3237C00EA39F4 /* BreadfastMobile_Task_IOSApp.swift */,
 				2636E4C729E3237D00EA39F4 /* Preview Content */,
 			);
@@ -174,20 +174,6 @@
 			path = "BreadfastMobile Task IOSUITests";
 			sourceTree = "<group>";
 		};
-		2636E4EB29E325D500EA39F4 /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		2636E4EC29E325DE00EA39F4 /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
 		2636E4ED29E325E600EA39F4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				2636E50429E341D100EA39F4 /* Extensions */,
+				2636E53529E3718700EA39F4 /* Constant.swift */,
 			);
 			path = Utilites;
 			sourceTree = "<group>";
@@ -301,7 +288,7 @@
 				2636E4FA29E3350700EA39F4 /* ServiceHandler.swift */,
 				2636E50029E33EE100EA39F4 /* ApplicationError.swift */,
 				2636E4FC29E33EB200EA39F4 /* HTTPMethodType.swift */,
-				2636E4FE29E33EC400EA39F4 /* Endpoint.swift */,
+				2636E4FE29E33EC400EA39F4 /* EndpointProtocol.swift */,
 			);
 			path = ServiceHanlder;
 			sourceTree = "<group>";
@@ -564,10 +551,11 @@
 				2636E52E29E3604D00EA39F4 /* PostCommentsResponse.swift in Sources */,
 				2636E52A29E35DC500EA39F4 /* PostDetailsCoordinator.swift in Sources */,
 				2636E4C229E3237C00EA39F4 /* BreadfastMobile_Task_IOSApp.swift in Sources */,
+				2636E53629E3718700EA39F4 /* Constant.swift in Sources */,
 				2636E52029E35B3200EA39F4 /* Assets.swift in Sources */,
 				2636E50829E3446C00EA39F4 /* PostsResponse.swift in Sources */,
 				2636E51429E3461F00EA39F4 /* PostsView.swift in Sources */,
-				2636E4FF29E33EC400EA39F4 /* Endpoint.swift in Sources */,
+				2636E4FF29E33EC400EA39F4 /* EndpointProtocol.swift in Sources */,
 				2636E53229E36C0C00EA39F4 /* PostCommentsUseCase.swift in Sources */,
 				2636E50129E33EE100EA39F4 /* ApplicationError.swift in Sources */,
 				2636E50D29E344E900EA39F4 /* PostsRepositoryProtocol.swift in Sources */,

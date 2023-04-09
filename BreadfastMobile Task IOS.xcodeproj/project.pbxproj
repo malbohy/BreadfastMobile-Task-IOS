@@ -40,6 +40,7 @@
 		2636E53829E3738900EA39F4 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E53729E3738900EA39F4 /* PostEntity.swift */; };
 		2636E53A29E3759600EA39F4 /* PostCommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E53929E3759600EA39F4 /* PostCommentEntity.swift */; };
 		26B7F55629E3794B007B7073 /* postDetailsCoordinatorTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F55529E3794B007B7073 /* postDetailsCoordinatorTestCases.swift */; };
+		26B7F55829E37B92007B7073 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 26B7F55729E37B92007B7073 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		2636E53929E3759600EA39F4 /* PostCommentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentEntity.swift; sourceTree = "<group>"; };
 		26B7F55429E378AA007B7073 /* BreadfastMobile Task IOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "BreadfastMobile Task IOS.xctestplan"; sourceTree = "<group>"; };
 		26B7F55529E3794B007B7073 /* postDetailsCoordinatorTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postDetailsCoordinatorTestCases.swift; sourceTree = "<group>"; };
+		26B7F55729E37B92007B7073 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		2636E4B529E3237C00EA39F4 = {
 			isa = PBXGroup;
 			children = (
+				26B7F55729E37B92007B7073 /* README.md */,
 				26B7F55429E378AA007B7073 /* BreadfastMobile Task IOS.xctestplan */,
 				2636E4C029E3237C00EA39F4 /* BreadfastMobile Task IOS */,
 				2636E4D129E3237D00EA39F4 /* BreadfastMobile Task IOSTests */,
@@ -519,6 +522,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B7F55829E37B92007B7073 /* README.md in Resources */,
 				2636E4C929E3237D00EA39F4 /* Preview Assets.xcassets in Resources */,
 				2636E4C629E3237D00EA39F4 /* Assets.xcassets in Resources */,
 			);

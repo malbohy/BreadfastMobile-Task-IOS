@@ -26,6 +26,8 @@
 		2636E51429E3461F00EA39F4 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E51329E3461F00EA39F4 /* PostsView.swift */; };
 		2636E51629E3467E00EA39F4 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E51529E3467E00EA39F4 /* PostsViewModel.swift */; };
 		2636E51929E3487500EA39F4 /* PostsViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E51829E3487500EA39F4 /* PostsViewCoordinator.swift */; };
+		2636E51E29E358E200EA39F4 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E51D29E358E200EA39F4 /* SplashView.swift */; };
+		2636E52029E35B3200EA39F4 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E51F29E35B3200EA39F4 /* Assets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		2636E51329E3461F00EA39F4 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		2636E51529E3467E00EA39F4 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		2636E51829E3487500EA39F4 /* PostsViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewCoordinator.swift; sourceTree = "<group>"; };
+		2636E51D29E358E200EA39F4 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		2636E51F29E35B3200EA39F4 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +128,6 @@
 				2636E4ED29E325E600EA39F4 /* Resources */,
 				2636E4EC29E325DE00EA39F4 /* SupportingFiles */,
 				2636E4C129E3237C00EA39F4 /* BreadfastMobile_Task_IOSApp.swift */,
-				2636E4C529E3237D00EA39F4 /* Assets.xcassets */,
 				2636E4C729E3237D00EA39F4 /* Preview Content */,
 			);
 			path = "BreadfastMobile Task IOS";
@@ -172,6 +175,8 @@
 		2636E4ED29E325E600EA39F4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2636E4C529E3237D00EA39F4 /* Assets.xcassets */,
+				2636E51F29E35B3200EA39F4 /* Assets.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 		2636E4F029E3261200EA39F4 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				2636E51A29E358D000EA39F4 /* Splash */,
 				2636E51029E345FB00EA39F4 /* Posts */,
 			);
 			path = Presentation;
@@ -329,6 +335,30 @@
 				2636E51829E3487500EA39F4 /* PostsViewCoordinator.swift */,
 			);
 			path = Cordinator;
+			sourceTree = "<group>";
+		};
+		2636E51A29E358D000EA39F4 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				2636E51C29E358D700EA39F4 /* ViewModel */,
+				2636E51B29E358D400EA39F4 /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		2636E51B29E358D400EA39F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2636E51D29E358E200EA39F4 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2636E51C29E358D700EA39F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,11 +495,13 @@
 				2636E51929E3487500EA39F4 /* PostsViewCoordinator.swift in Sources */,
 				2636E4FB29E3350700EA39F4 /* ServiceHandler.swift in Sources */,
 				2636E51629E3467E00EA39F4 /* PostsViewModel.swift in Sources */,
+				2636E51E29E358E200EA39F4 /* SplashView.swift in Sources */,
 				2636E50F29E3451900EA39F4 /* PostsUseCase.swift in Sources */,
 				2636E50629E341EE00EA39F4 /* EncodableExtenstion.swift in Sources */,
 				2636E50329E33F0600EA39F4 /* PostsRepository.swift in Sources */,
 				2636E4FD29E33EB200EA39F4 /* HTTPMethodType.swift in Sources */,
 				2636E4C229E3237C00EA39F4 /* BreadfastMobile_Task_IOSApp.swift in Sources */,
+				2636E52029E35B3200EA39F4 /* Assets.swift in Sources */,
 				2636E50829E3446C00EA39F4 /* PostsResponse.swift in Sources */,
 				2636E51429E3461F00EA39F4 /* PostsView.swift in Sources */,
 				2636E4FF29E33EC400EA39F4 /* Endpoint.swift in Sources */,

@@ -34,14 +34,14 @@ struct PostDetailsView_Previews: PreviewProvider {
             viewModel: PostDetailsViewModel(
                 useCase: PostCommentsUseCase(
                     postsRepository: PostsRepository()),
-                post: PostResponseData(id: 0,
+                post: PostEntity(id: 0,
                                        userId: 0,
                                        userAvatar: "",
                                        userName: "",
                                        title: "",
                                        body: ""),
                 coordinator: PostDetailsCoordinator(
-                    post: PostResponseData(
+                    post: PostEntity(
                         id: 0,
                         userId: 0,
                         userAvatar: "",

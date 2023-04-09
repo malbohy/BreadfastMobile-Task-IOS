@@ -10,11 +10,11 @@ import Foundation
 final class PostDetailsViewModel: ObservableObject {
     private let useCase: PostCommentsUseCase
     private let coordinator: PostDetailsCoordinator
-    private let post: PostResponseData
+    private let post: PostEntity
     @Published private(set) var viewState: ViewState = .init()
 
     init(useCase: PostCommentsUseCase,
-         post: PostResponseData,
+         post: PostEntity,
          coordinator: PostDetailsCoordinator) {
         self.useCase = useCase
         self.coordinator = coordinator
@@ -51,17 +51,13 @@ extension PostDetailsViewModel {
             }
         }
     }
-    
-//    func gotoPostDetails(postId: Int) -> PostDetailsView {
-//        return coordinator.goToPostDetails(postId: post)
-//    }
 }
 
 extension PostDetailsViewModel {
     struct ViewState {
         var errorMessage: String = ""
-        var postComments: PostsCommentsResponse = []
-        var post: PostResponseData?
+        var postComments: PostComments = []
+        var post: PostEntity?
         var shouldShowError: Bool = false
         var isLoading: Bool = false
     }

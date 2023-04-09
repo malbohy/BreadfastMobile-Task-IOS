@@ -10,14 +10,14 @@ import SwiftUI
 
 struct CommentCard: View {
     let name: String
-    let avatar: String?
+    let avatar: String
     let content: String
 
     var body: some View {
         HStack(alignment: .top) {
-            if let avatar = avatar {
-                Image(avatar)
-                    .resizable()
+            if !avatar.isEmpty,
+                let url = URL(string: avatar) {
+                AsyncImage(url: url)
                     .frame(width: 50, height: 50)
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.gray, lineWidth: 1))

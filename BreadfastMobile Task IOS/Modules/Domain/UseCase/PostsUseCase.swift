@@ -10,7 +10,9 @@ import Foundation
 struct PostsUseCase {
     let postsRepository: PostsRepositoryProtocol
     
-    func execute() async throws -> PostsResponse {
-        try await postsRepository.getPosts()
+    func execute() async throws -> PostsEntity {
+        try await postsRepository.getPosts().map({$0.mapped()})
     }
 }
+
+

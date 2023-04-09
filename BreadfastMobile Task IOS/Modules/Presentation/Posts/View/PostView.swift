@@ -9,14 +9,14 @@ import Foundation
 import SwiftUI
 
 struct PostView: View {
-    let post: PostResponseData
+    let post: PostEntity
     
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                if let userImage = post.userAvatar {
-                    Image(userImage)
-                        .resizable()
+                if !post.userAvatar.isEmpty,
+                    let url = URL(string: post.userAvatar) {
+                    AsyncImage(url: url)
                         .frame(width: 50, height: 50)
                         .clipShape(Circle())
                 } else {
@@ -26,7 +26,7 @@ struct PostView: View {
                         .clipShape(Circle())
                 }
                 
-                Text(post.userName ?? "User")
+                Text(post.userName)
                     .font(.headline)
                     .bold()
             }

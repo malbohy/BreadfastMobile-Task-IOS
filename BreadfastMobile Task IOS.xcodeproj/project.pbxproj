@@ -37,6 +37,8 @@
 		2636E53229E36C0C00EA39F4 /* PostCommentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E53129E36C0C00EA39F4 /* PostCommentsUseCase.swift */; };
 		2636E53429E3701C00EA39F4 /* CommentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E53329E3701C00EA39F4 /* CommentCard.swift */; };
 		2636E53629E3718700EA39F4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E53529E3718700EA39F4 /* Constant.swift */; };
+		2636E53829E3738900EA39F4 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E53729E3738900EA39F4 /* PostEntity.swift */; };
+		2636E53A29E3759600EA39F4 /* PostCommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2636E53929E3759600EA39F4 /* PostCommentEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		2636E53129E36C0C00EA39F4 /* PostCommentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentsUseCase.swift; sourceTree = "<group>"; };
 		2636E53329E3701C00EA39F4 /* CommentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCard.swift; sourceTree = "<group>"; };
 		2636E53529E3718700EA39F4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		2636E53729E3738900EA39F4 /* PostEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
+		2636E53929E3759600EA39F4 /* PostCommentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +274,8 @@
 		2636E4F729E3264B00EA39F4 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				2636E53729E3738900EA39F4 /* PostEntity.swift */,
+				2636E53929E3759600EA39F4 /* PostCommentEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -542,8 +548,10 @@
 				2636E51E29E358E200EA39F4 /* SplashView.swift in Sources */,
 				2636E50F29E3451900EA39F4 /* PostsUseCase.swift in Sources */,
 				2636E53029E360EA00EA39F4 /* PostCommentsEndPoint.swift in Sources */,
+				2636E53A29E3759600EA39F4 /* PostCommentEntity.swift in Sources */,
 				2636E50629E341EE00EA39F4 /* EncodableExtenstion.swift in Sources */,
 				2636E50329E33F0600EA39F4 /* PostsRepository.swift in Sources */,
+				2636E53829E3738900EA39F4 /* PostEntity.swift in Sources */,
 				2636E4FD29E33EB200EA39F4 /* HTTPMethodType.swift in Sources */,
 				2636E52C29E35FD600EA39F4 /* PostDetailsViewModel.swift in Sources */,
 				2636E52829E35DA700EA39F4 /* PostDetailsView.swift in Sources */,

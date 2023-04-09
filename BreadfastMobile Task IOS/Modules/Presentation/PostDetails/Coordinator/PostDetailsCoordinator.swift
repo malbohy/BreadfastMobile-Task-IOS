@@ -8,7 +8,7 @@
 import Foundation
 
 struct PostDetailsCoordinator {
-    let post: PostResponseData
+    let post: PostEntity
     
     func build() -> PostDetailsView {
         let postsRepository = PostsRepository()

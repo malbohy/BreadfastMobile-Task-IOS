@@ -47,7 +47,7 @@ extension PostsViewModel {
         }
     }
     
-    func gotoPostDetails(post: PostResponseData) -> PostDetailsView {
+    func gotoPostDetails(post: PostEntity) -> PostDetailsView {
         return coordinator.goToPostDetails(post: post)
     }
 }
@@ -55,7 +55,7 @@ extension PostsViewModel {
 extension PostsViewModel {
     struct ViewState {
         var errorMessage: String = ""
-        var posts: PostsResponse = []
+        var posts: PostsEntity = []
         var shouldShowError: Bool = false
         var isLoading: Bool = false
     }

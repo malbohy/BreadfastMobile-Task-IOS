@@ -11,7 +11,7 @@ import SwiftUI
 struct BreadfastMobile_Task_IOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PostsViewCoordinator().build()
         }
     }
 }
